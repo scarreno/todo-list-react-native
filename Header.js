@@ -9,7 +9,6 @@ export default class Header extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}> Ingrese una tarea </Text>
         <TextInput placeholder="Ingresa una tarea" 
             style={styles.input}
             onChangeText={this.props.cambiarTexto}
@@ -25,17 +24,19 @@ export default class Header extends Component {
 const styles = StyleSheet.create({
     container: {
       flex: 2,
-      backgroundColor: '#190DC3',
+      backgroundColor: '#A7E1FA',
       justifyContent:'center',
     },
     text: {
         color:'white',
-        paddingVertical: 10
+        paddingVertical: 10,
+        fontSize: 24
     },
     input: {
         paddingHorizontal: 16,
-        backgroundColor: 'white',
-        paddingVertical: 10
+        backgroundColor: '#E2F7FF',
+        paddingVertical: 10,
+        fontSize: 24
     }
   });
   
